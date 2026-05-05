@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                
+            
+     
+
+    
+    </header>
+    
+    <div>
+        
+        <nav>
+            <ul>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="Swift.html">Swift</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="go.html">Go</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="typescript.html">TypeScript</a></li>
+                <li><a href="kotlin.html">Kotlin</a></li>
+                <li><a href="objec.html">Objective-C</a></li>
+                <li><a href="perl.html">Perl</a></li>
+                <li><a href="scala.html">Scala</a></li>
+                <!-- Add more language sections here -->
+            </ul>
+        </nav>
+    </div>
+    <div class="stringer">
+        
+            <ul>
+                <a href="#Information-section"><span>Information</span></a>
+                <a href="#Books-section"><span>Books</span></a>
+                <a href="#Videoes-section"><span>Videoes</span></a>
+                <a href="#Questions-section"><span>Questions</span></a>
+                <a href="#Resource-section"><span>Resource</span></a>
+
+                
+                <!-- Add more language sections here -->
+            </ul>
+      
+        
+    </div>
+    <main style=" margin-left: 200px;margin-top: 125px 0;">
+        <section id="Information-section">
+            <h2>Information</h2>
+            <p>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Information About PHP</title>
+                </head>
+                <body>
+                <p>PHP, which stands for "Hypertext Preprocessor," is a popular server-side scripting language primarily used for web development. Here's some comprehensive information about PHP:</h1>
+                <ul>
+                    <p><strong>Purpose:</strong> PHP is designed for creating dynamic web pages and web applications. It is especially useful for generating HTML content, handling form data, interacting with databases, managing sessions and cookies, and more.</li>
+                    <p><strong>Syntax:</strong> PHP code is embedded within HTML, making it easy to mix PHP logic with HTML markup. PHP code is enclosed within <code>&lt;?php ?&gt;</code> tags.</li>
+                    <p><strong>Features:</strong>
+                        <ul>
+                            <p><strong>Variables:</strong> PHP uses the $ symbol to declare variables. Variables do not require explicit data typing.</li>
+                            <p><strong>Control Structures:</strong> PHP supports common control structures like if-else statements, loops (for, while, do-while), switch-case statements, and more.</li>
+                            <p><strong>Functions:</strong> PHP allows you to define functions for modular and reusable code.</li>
+                            <p><strong>Arrays:</strong> PHP supports indexed arrays, associative arrays, and multidimensional arrays.</li>
+                            <p><strong>Classes and Objects:</strong> PHP supports object-oriented programming (OOP) concepts such as classes, objects, inheritance, encapsulation, and polymorphism.</li>
+                            <p><strong>File Handling:</strong> PHP provides functions for reading from and writing to files, managing file permissions, and more.</li>
+                            <p><strong>Database Connectivity:</strong> PHP has built-in support for various databases like MySQL, PostgreSQL, SQLite, and others through extensions like PDO (PHP Data Objects) and MySQLi (MySQL Improved).</li>
+                            <p><strong>Form Handling:</strong> PHP can process form data submitted via HTTP POST or GET methods.</li>
+                            <p><strong>Sessions and Cookies:</strong> PHP allows you to manage user sessions and set cookies to track user information.</li>
+                            <p><strong>Error Handling:</strong> PHP provides mechanisms for error handling and logging, including try-catch blocks for exception handling.</li>
+                            <p><strong>Security:</strong> PHP includes features for secure coding practices, such as input validation, output escaping, and secure session management.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Frameworks and CMS:</strong> PHP has popular frameworks like Laravel, Symfony, CodeIgniter, and Yii, which provide a structured way to build web applications. It also powers content management systems (CMS) like WordPress, Drupal, and Joomla.</li>
+                    <p><strong>Community and Support:</strong> PHP has a large and active community of developers who contribute to its development, create libraries and extensions, and provide support through forums, documentation, tutorials, and online resources.</li>
+                    <p><strong>Cross-Platform:</strong> PHP is platform-independent, running on various operating systems such as Windows, Linux, macOS, and Unix-based systems.</li>
+                </ul>
+                </body>
+                </html>
+                
+            </p>
+        </section>
+
+        <section id="Books-section">
+            <h2>Books</h2>
+            <ul>
+                
+                <li><a href="https://assets.ctfassets.net/nkydfjx48olf/5qFMF3mvitLMahX67i7iOb/028229996c13cbc27a0538f055a41b46/php_cookbook.pdf" download>Download PDF</a></li>
+                <li><a href="https://dpbck.ac.in/wp-content/uploads/2022/05/Programming-PHP-PDFDrive-.pdf" download>Download PDF</a></li>
+                <li><a href="https://jsilab.ch/cfpa/ID/ref/PhpMySqlJavaScriptCss/Learning_PHP_7_-_Antonio_Lopez.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.gacbe.ac.in/images/E%20books/core%20PHP%20Programming%20bbbb.pdf" download>Download PDF</a></li>
+                <li><a href="https://ptgmedia.pearsoncmg.com/images/9780321833891/samplepages/9780321833891.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.tutorialspoint.com/php/php_tutorial.pdf" download>Download PDF</a></li>
+                <li><a href="https://doc.lagout.org/programmation/Learning%20PHP,%20MySQL%20%26%20JavaScript_%20with%20jQuery,%20CSS%20%26%20HTML5%20(4th%20ed.)%20%5BNixon%202014-12-14%5D.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.ascdegreecollege.ac.in/wp-content/uploads/2020/12/PHP-Programming_-PHP-Crush-Course-Learn-PHP-Programming-in-4-hours-PHP-for-Beginners.pdf" download>Download PDF</a></li>
+                <li><a href="https://referenceglobe.com/CollegeLibrary/library_books/20180308080228PHPEBOOK.pdf" download>Download PDF</a></li>
+
+            </ul>        
+        </section>
+
+        <section id="Videoes-section">
+            <h2>Videoes</h2>
+            <ul>
+                <li><a href="https://youtu.be/at19OmH2Bg4?si=oTiblBAmvympOYVY">Link 1</a></li>
+                <li><a href="https://youtu.be/zZ6vybT1HQs?si=qnUsNpTt9v7m6wY3">Link 2</a></li>
+                <li><a href="https://youtu.be/NqP0-UkIQS4?si=oP3EWVGXeSp6PigB">Link 3</a></li>
+                <li><a href="https://youtu.be/D4DXbRsQAOA?si=v3pV1itNnGjUWIhl">Link 4</a></li>
+                <li><a href="https://youtu.be/EJWw1bd0-C0?si=_F7j6b4Y4M6WLCM-">Link 5</a></li>
+            
+            </ul>
+        </section>
+        
+        <section id="Questions-section">
+            <h2>Questions</h2>
+            <ul>
+                 <p>What is GET and POST method in PHP? </p>
+                 <p>What is the use of session and cookies in PHP?</p>
+                 <p>What are the characteristics of PHP variables?</p>
+                 <p>What is PEAR in PHP?</p>
+                 <p>What are PHP Magic Methods/Functions?</p>
+                 <p>How do we set an infinite execution time for PHP script?</p>
+                 <p>What is the difference between $message and $$message in PHP?</p>
+                 <p>What are 'Traits'?</p>
+                 <p>How many types of an array are there in PHP?</p>
+                 <p>What is the difference between "echo" and "print" in PHP?</p>
+                 <p>1. Who do we know as the father of PHP?</p>
+                 <p>2. What did the acronym PHP originally stand for?</p>
+                 <p>3. What are some of the common applications of PHP?</p>
+                 <p>4. What is the recommended PHP version?</p>
+                 <p>5. Which programming language is PHP similar to?</p>
+                 <p>6. What is the PHP scripting engine called?</p>
+                 <p>7. What is the main difference between PHP4 and PHP5?</p>
+                 <p>8. Is PHP a case sensitive language?</p>
+                 <p>9. What are the popular frameworks in PHP?</p>
+                 <p>10. Name the popular Content Management Systems (CMS) in PHP.</p>
+                 <p>11. What is PEAR in PHP?</p>
+                 <p>12. What is the difference between static and dynamic websites?</p>
+                 <p>13. What are the characteristics of PHP variables?</p>
+                 <p>14. What are the rules for naming a PHP variable?</p>
+                 <p>15. What are the rules to determine the "truth" of any value not already of the Boolean type?</p>
+                 <p>16. What is NULL?</p>
+                 <p>17. How do you define a constant in PHP?</p>
+                 <p>18. What is the purpose of the constant() function?</p>
+                 <p>19. What are the differences between PHP constants and variables?</p>
+                 <p>20. What is the purpose of the break and continue statement?</p>
+                 <p>21. What are the two most common ways to start and finish a PHP code block?</p>
+                 <p>22. What is the meaning of a final class and a final method?</p>
+                 <p>23. How can you compare objects in PHP?</p>
+                 <p>24. What are constructors and destructors in PHP?</p>
+                 <p>25. Explain the syntax for the 'for each' loop with an example.</p>
+                 <p>26. What is the difference between single quoted string and double quoted string?</p>
+                 <p>27. How to concatenate two strings in PHP?</p>
+                 <p>28. What is the difference between "echo" and "print" in PHP?</p>
+                 <p>29. Name some of the functions in PHP.</p>
+                 <p>30. How can PHP interact with HTML?</p>
+                 <p>31. How can you embed PHP code in an HTML page?</p>
+                 <p>32. How does PHP interact with Javascript?</p>
+                 <p>33. Name the different types of variables in PHP.</p>
+                 <p>34. List the main types of errors in PHP and explain their differences.</p>
+                 <p>35. What are 'Traits'?</p>
+                 <p>36. Can the value of a constant change during the script’s execution?</p>
+                 <p>37. Name and define the three scope levels available in PHP.</p>
+                 <p>38. What do we mean by ‘escaping to PHP’?</p>
+                 <p>39. How many types of an array are there in PHP?</p>
+                 <p>40. What do we mean by a PSR standard? What is its importance? </p>
+                 <p>41. What is the use of the function' imagetypes()'?</p>
+                 <p>42.What is GET and POST method in PHP? </p>
+                 <p>43.What is the use of session and cookies in PHP?</p>
+                 <p>44.What are the characteristics of PHP variables?</p>
+                 <p>45.What is PEAR in PHP?</p>
+                 <p>46.What are PHP Magic Methods/Functions?</p>
+                 <p>47.How do we set an infinite execution time for PHP script?</p>
+                 <p>48.What is the difference between $message and $$message in PHP?</p>
+                 <p>49.What are 'Traits'?</p>
+                 <p>50.How many types of an array are there in PHP?</p>
+                 <p>51.What is the difference between "echo" and "print" in PHP?</p>
+       
+                            
+                <li> </li>
+
+            </ul>
+        </section>
+
+        <section id="Resource-section">
+            <h2>Resource</h2>
+            
+            <p><a href="https://www.php.net/">PHP.net - Official PHP Website</a></p>
+            <p><a href="https://www.w3schools.com/php/">W3Schools PHP - PHP Tutorial</a></p>
+ 
+
+
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

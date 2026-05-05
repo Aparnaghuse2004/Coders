@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder - Your Ultimate Coding Resource</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                
+            
+     
+
+    
+    </header>
+    
+    <div>
+        
+        <nav>
+            <ul>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="Swift.html">Swift</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="go.html">Go</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="typescript.html">TypeScript</a></li>
+                <li><a href="kotlin.html">Kotlin</a></li>
+                <li><a href="objec.html">Objective-C</a></li>
+                <li><a href="perl.html">Perl</a></li>
+                <li><a href="scala.html">Scala</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="stringer">
+        
+            <ul>
+                <a href="#Information-section"><span>Information</span></a>
+                <a href="#Books-section"><span>Books</span></a>
+                <a href="#Videoes-section"><span>Videoes</span></a>
+                <a href="#Questions-section"><span>Questions</span></a>
+                <a href="#Resource-section"><span>Resource</span></a>
+
+                
+                <!-- Add more language sections here -->
+            </ul>
+      
+        
+    </div>
+    <main style=" margin-left: 200px;margin-top: 125px 0;">
+        <section id="Information-section">
+            <h2>Information</h2>
+            <h1>Information About JavaScript Programming Language</h1>
+            <p>JavaScript is a versatile and widely-used programming language primarily used for client-side web development, but it's also used for server-side development, game development, mobile app development, and more. Here's an overview of JavaScript:</p>
+            <ol>
+                <p><strong>History</strong>: JavaScript was created by Brendan Eich in 1995 while he was working at Netscape Communications. Initially named LiveScript, it was later renamed JavaScript to capitalize on the popularity of Java.</li>
+                <p><strong>Key Features</strong>:
+                    <ul>
+                        <p><strong>Client-Side Scripting</strong>: JavaScript enhances interactivity and user experience in web browsers.</li>
+                        <p><strong>Object-Oriented</strong>: JavaScript supports objects, classes, inheritance, and encapsulation.</li>
+                        <p><strong>Dynamic Typing</strong>: Variables in JavaScript can hold values of any data type.</li>
+                        <p><strong>Event-Driven</strong>: JavaScript allows developers to respond to user actions and browser events.</li>
+                        <p><strong>Asynchronous Programming</strong>: JavaScript supports asynchronous programming for non-blocking code execution.</li>
+                        <p><strong>DOM Manipulation</strong>: JavaScript can manipulate the Document Object Model (DOM) of web pages.</li>
+                        <p><strong>Browser Compatibility</strong>: JavaScript is supported by all modern web browsers.</li>
+                        <p><strong>Server-Side Development</strong>: With Node.js, JavaScript is used for server-side programming.</li>
+                        <p><strong>Libraries and Frameworks</strong>: JavaScript has a rich ecosystem of libraries and frameworks like React, Angular, Vue.js, and Express.js.</li>
+                    </ul>
+                </p>
+                <p><strong>Usage</strong>:
+                    <ul>
+                        <p><strong>Front-End Web Development</strong>: JavaScript is essential for interactive web features and AJAX.</li>
+                        <p><strong>Back-End Web Development</strong>: JavaScript is used with Node.js for server-side programming.</li>
+                        <p><strong>Mobile App Development</strong>: JavaScript is used in frameworks like React Native and Ionic for cross-platform mobile apps.</li>
+                        <p><strong>Game Development</strong>: JavaScript is used in game engines like Phaser and Three.js.</li>
+                        <p><strong>Desktop Applications</strong>: Technologies like Electron allow JavaScript for building desktop applications.</li>
+                    </ul>
+                </p>
+                <p><strong>Community and Resources</strong>:
+                    <ul>
+                        <p>JavaScript has a vast and active community providing tutorials, documentation, and forums.</li>
+                        <p>Online platforms like MDN Web Docs, Stack Overflow, and GitHub are rich sources of information for JavaScript developers.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="Books-section">
+            <h2>Books</h2>
+            <ul>
+                <li><a href="https://exploringjs.com/impatient-js/downloads/impatient-js-preview-book.pdf" download>Download PDF</a></li>
+                <li><a href="https://hoclaptrinhdanang.com/downloads/pdf/javascript/Coding%20with%20JavaScript%20For%20Dummies.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.gurukultti.org/admin/notice/javascript.pdf" download>Download PDF</a></li>
+                <li><a href="https://pepa.holla.cz/wp-content/uploads/2016/08/Learning-JavaScript-3rd-Edition.pdf" download>Download PDF</a></li>
+                <li><a href="https://eloquentjavascript.net/Eloquent_JavaScript_small.pdf" download>Download PDF</a></li>
+                <li><a href="https://aaronyeo.org/books_/JavaScript/Eric%20T.%20Freeman,%20Elisabeth%20Robson%20-%20Head%20First%20JavaScript%20Programming_%20A%20Brain-Friendly%20Guide-O%E2%80%99Reilly%20Media%20(2014).pdf" download>Download PDF</a></li>
+                <li><a href="https://www.ime.usp.br/~alvaroma/ucsp/proglang/book.pdf" download>Download PDF</a></li>
+                <li><a href="https://pepa.holla.cz/wp-content/uploads/2016/08/JavaScript-The-Definitive-Guide-6th-Edition.pdf" download>Download PDF</a></li>
+                <li><a href="https://jmvidal.cse.sc.edu/library/resig06a.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.tutorialspoint.com/javascript/javascript_tutorial.pdf" download>Download PDF</a></li>
+                <li><a href="https://andersonguelphjs.github.io/OReilly_JavaScript_The_Good_Parts_May_2008.pdf" download>Download PDF</a></li>
+                
+            </ul>        
+        </section>
+
+        <section id="Videoes-section">
+            <h2>Videoes</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW&si=8sZzeudelcpPpMIC">Link 1</a></li>
+                <li><a href="https://youtu.be/SBmSRK3feww?si=HJm3LqaoVR1x7FcF">Link 2</a></li>
+                <li><a href="https://youtu.be/ZxKM3DCV2kE?si=5bRoJz01N705gqMn">Link 3</a></li>
+                <li><a href="https://youtu.be/lfmg-EJ8gm4?si=yl8tEd0iiltTEe5G">Link 4</a></li>
+                <li><a href="https://youtu.be/B7wHpNUUT4Y?si=yjud9KqoXQSmIb9w">Link 5</a></li>
+                <li><a href="https://youtu.be/VlPiVmYuoqw?si=e8FnhWTxeWxz4qJW">Link 6</a></li>
+            
+            </ul>
+        </section>
+        
+        <section id="Questions-section">
+            <h2>Questions</h2>
+            <ul>
+                <p>1. Write a JavaScript function to calculate the sum of two numbers.</p> 
+                <p>2. Write a JavaScript program to find the maximum number in an array. </p> 
+                <p>3. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). </p> 
+                <p>4. Write a JavaScript program to reverse a given string. </p> 
+                <p>5. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.</p>  
+                <p>6. Write a JavaScript program to calculate the factorial of a given number. </p> 
+                <p>7. Write a JavaScript function to check if a given number is prime.</p>  
+                <p>8. Write a JavaScript program to find the largest element in a nested array. </p> 
+                <p>9. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms. </p>  
+                <p>10. Write a JavaScript program to convert a string to title case (capitalize the first letter of each word). </p> 
+                <p>1. What do you understand about JavaScript?</p> 
+                <p>2. What’s the difference between JavaScript and Java?</p> 
+                <p>3. What are the various data types that exist in JavaScript?</p> 
+                <p>4. What are the features of JavaScript?</p> 
+                <p>5. What are the advantages of JavaScript over other web technologies?</p> 
+                <p>6. How do you create an object in JavaScript?</p> 
+                <p>7. How do you create an array in JavaScript?</p> 
+                <p>8. What are some of the built-in methods in JavaScript?</p> 
+                <p>9. What are the scopes of a variable in JavaScript?</p> 
+                <p>10. What is the ‘this’ keyword in JavaScript?</p> 
+                <p>11. What are the conventions of naming a variable in JavaScript?</p> 
+                <p>12. What is Callback in JavaScript?</p> 
+                <p>13. How do you debug a JavaScript code?</p> 
+                <p>14. What is the difference between Function declaration and Function expression?</p> 
+                <p>15. What are the ways of adding JavaScript code in an HTML file?</p> 
+                <p>16. What do you understand about cookies?</p> 
+                <p>17. How would you create a cookie?</p> 
+                <p>18. How would you read a cookie?</p> 
+                <p>19. How would you delete a cookie?</p> 
+                <p>20. What’s the difference between let and var?</p> 
+                <p>21. What are Closures in JavaScript?</p> 
+                <p>22. What are the arrow functions in JavaScript?</p> 
+                <p>23. What are the different ways an HTML element can be accessed in a JavaScript code?</p> 
+                <p>24. What are the ways of defining a variable in JavaScript?</p> 
+                <p>25. What are Imports and Exports in JavaScript?</p> 
+                <p>26. What is the difference between Document and Window in JavaScript?</p> 
+                <p>27. What are some of the JavaScript frameworks and their uses?</p> 
+                <p>28. What is the difference between Undefined and Undeclared in JavaScript?</p> 
+                <p>29. What is the difference between Undefined and Null in JavaScript?</p> 
+                <p>30. What is the difference between Session storage and Local storage?</p> 
+                <p>31. What are the various data types that exist in JavaScript?</p> 
+                <p>32. What is the ‘this’ keyword in JavaScript? </p> 
+                <p>33. What is the difference between Call and Apply? (explain in detail with examples)</p> 
+                <p>34. What are the scopes of a variable in JavaScript? </p> 
+                <p>35. What are the arrow functions in JavaScript?</p>  
+                <p>36. Explain Hoisting in javascript. (with examples)</p> 
+                <p>37. Difference between “ == “ and “ === “ operators (with examples)</p> 
+                <p>38. Difference between var and let keyword</p> 
+                <p>39. Implicit Type Coercion in javascript (in detail with examples)</p> 
+                <p>40. Is javascript a statically typed or a dynamically typed language?</p> 
+                <p>41. NaN property in JavaScript</p> 
+                <p>42. Passed by value and passed by reference </p> 
+                <p>43. Immediately Invoked Function in JavaScript</p> 
+                <p>44. Characteristics of javascript strict-mode</p> 
+                <p>45. Higher Order Functions (with examples)</p> 
+                <p>46. Self Invoking Functions</p> 
+                <p>47. difference between exec () and test () methods</p> 
+                <p>48. currying in JavaScript (with examples)</p> 
+                <p>49. Advantages of using External JavaScript</p> 
+                <p>50. What are object prototypes?</p> 
+                <p>51. Types of errors in javascript</p> 
+                <p>52. What is memoization?</p> 
+                <p>53. Recursion in a programming language</p> 
+                <p>54. Use of a constructor function (with examples)</p> 
+                <p>55. Which method is used to retrieve a character from a certain index?</p> 
+                <p>56. What is BOM?</p> 
+                <p>57. Difference between client-side and server-side</p> 
+                <p>58. What is the prototype design pattern?</p> 
+                <p>59. Differences between declaring variables using var, let and const.</p>  
+                <p>60. Rest parameter and spread operator</p> 
+                <p>61. Write a JavaScript function to calculate the sum of two numbers. </p>  
+                <p>62. Write a JavaScript program to find the maximum number in an array. </p> 
+                <p>63. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). </p> 
+                <p>64. Write a JavaScript program to reverse a given string. </p> 
+                <p>65. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. </p> 
+                <p>66. Write a JavaScript program to calculate the factorial of a given number. </p> 
+                <p>67. Write a JavaScript function to check if a given number is prime. </p> 
+                <p>68. Write a JavaScript program to find the largest element in a nested array. </p> 
+                <p>69. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms. </p>  
+                <p>70. Write a JavaScript program to convert a string to title case (capitalize the first letter of each word).</p> 
+
+
+            </ul>
+        </section>
+
+        <section id="Resource-section">
+            <h2>Resource</h2>
+            <ul>
+                <p><a href="https://www.w3schools.com/js/">W3Schools JavaScript - JavaScript Tutorial</a></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">Mozilla Developer Network (MDN) JavaScript - JavaScript Guide and Reference</a></p>
+           
+            </ul>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

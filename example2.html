@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder - Your Ultimate Coding Resource</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Add CSS styles here for the canvas */
+        #c {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Place the canvas behind other content */
+        }
+
+        /* Hide the sidebar */
+        nav {
+            display: none;
+        }
+
+        main {
+            margin-left: 20px; /* Adjust the margin for the main content */
+            margin-top: 125px; /* Adjust the margin for the main content */
+        }
+
+        /* Set text color to white */
+        body, h1, h2, p, label, button, a {
+            color: white;
+        }
+
+        /* Set "Contact Us" text color to blue */
+        #contact-section h2 {
+            color: blue;
+        }
+
+        /* Set "Send Message" button text color to black */
+        #send-btn {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul>
+            <a href="home.html">Home</a>
+            <a href="#about-section">About</a>
+            <a href="#contact-section">Contact</a>
+        </ul>
+    </header>
+    <main>
+        <!-- Contact section -->
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <!-- Add your contact form here -->
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <button type="submit" id="send-btn">Send Message</button>
+            </form>
+            <p id="success-msg"></p> <!-- Placeholder for success message -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+    <script>
+        // Paste the matrix rain animation code here
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+
+        // Making the canvas full screen
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+
+        // Chinese characters - taken from the Unicode charset
+        var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        // Converting the string into an array of single characters
+        matrix = matrix.split("");
+
+        var font_size = 10;
+        var columns = c.width / font_size; // Number of columns for the rain
+        // An array of drops - one per column
+        var drops = [];
+        // X below is the X coordinate
+        // 1 = Y coordinate of the drop (same for every drop initially)
+        for (var x = 0; x < columns; x++)
+            drops[x] = 1;
+
+        // Drawing the characters
+        function draw() {
+            // Black BG for the canvas
+            // Translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "green"; // Green text
+            ctx.font = font_size + "px arial";
+            // Looping over drops
+            for (var i = 0; i < drops.length; i++) {
+                // A random Chinese character to print
+                var text = matrix[Math.floor(Math.random() * matrix.length)];
+                // X = i*font_size, Y = value of drops[i]*font_size
+                ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+                // Sending the drop back to the top randomly after it has crossed the screen
+                // Adding randomness to the reset to make the drops scattered on the Y axis
+                if (drops[i] * font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+
+                // Incrementing Y coordinate
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 100); // Set the interval to 100 milliseconds for slower animation
+
+        // Handling form submission
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+            document.getElementById("success-msg").textContent = "Sending message successful"; // Display success message
+            // You can add code here to send the form data to a server using AJAX or fetch
+        });
+    </script>
+</body>
+</html>

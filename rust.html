@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder - Your Ultimate Coding Resource</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                
+            
+     
+
+    
+    </header>
+    
+    <div>
+        
+        <nav>
+            <ul>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="swift.html">Swift</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="go.html">Go</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="typescript.html">TypeScript</a></li>
+                <li><a href="kotlin.html">Kotlin</a></li>
+                <li><a href="objec.html">Objective-C</a></li>
+                <li><a href="perl.html">Perl</a></li>
+                <li><a href="scala.html">Scala</a></li>
+                <!-- Add more language sections here -->
+            </ul>
+        </nav>
+    </div>
+    <div class="stringer">
+        
+            <ul>
+                <a href="#Information-section"><span>Information</span></a>
+                <a href="#Books-section"><span>Books</span></a>
+                <a href="#Videoes-section"><span>Videoes</span></a>
+                <a href="#Questions-section"><span>Questions</span></a>
+                <a href="#Resource-section"><span>Resource</span></a>
+
+                
+                <!-- Add more language sections here -->
+            </ul>
+      
+        
+    </div>
+    <main style=" margin-left: 200px;margin-top: 125px 0;">
+        <section id="Information-section">
+            <h2>Information</h2>
+            <p>Information About Rust Programming Language</h1>
+            <p>Rust is a systems programming language designed for safety, performance, and concurrency. Here's an overview of Rust:</p>
+            <ol>
+            <p><strong>Purpose</strong>: Rust was created by Mozilla Research to provide the performance of low-level languages like C and C++ while ensuring memory safety and preventing common programming errors.</li>
+            <p><strong>Key Features</strong>:
+            <ul>
+            <p><strong>Memory Safety</strong>: Rust's ownership model and borrowing rules ensure memory safety without needing a garbage collector.</li>
+            <p><strong>Concurrency</strong>: Rust has built-in support for concurrent programming using threads and the ownership model.</li>
+            <p><strong>Performance</strong>: Rust offers performance comparable to C and C++.</li>
+            <p><strong>Zero-cost Abstractions</strong>: Rust allows developers to write high-level abstractions without sacrificing performance.</li>
+            <p><strong>Trait System</strong>: Rust's trait system enables code reuse and polymorphism.</li>
+            <p><strong>Cargo Package Manager</strong>: Rust comes with Cargo, a powerful package manager and build system.</li>
+            <p><strong>Concurrency Without Data Races</strong>: Rust's ownership model ensures concurrency without data races.</li>
+            <p><strong>Error Handling</strong>: Rust uses the `Result` and `Option` types for safe error handling.</li>
+            <p><strong>Cross-Platform</strong>: Rust supports cross-platform development.</li>
+            </ul>
+            </p>
+            <p><strong>Usage</strong>: Rust is used for system programming, web development, game development, tools, and utilities.</li>
+            <p><strong>Ecosystem</strong>: Rust has a rich ecosystem of libraries and frameworks, including Actix, Tokio, Serde, Diesel, and more.</li>
+            <p><strong>Community</strong>: Rust has a growing and active community of developers.</li>
+            </ol>       
+
+        </section>
+
+        <section id="Books-section">
+            <h2>Books</h2>
+            <ul>
+                <li><a href="https://dl.ebooksworld.ir/motoman/No.Starch.Press.The.Rust.Programming.Language.www.EBooksWorld.ir.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.scs.stanford.edu/~zyedidia/docs/rust/rust_book.pdf" download>Download PDF</a></li>
+                <li><a href="http://bzz.wallizard.com:8081/share/books/RUST/Programming%20Rust%202nd%20Edition.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.tutorialspoint.com/rust/rust_tutorial.pdf" download>Download PDF</a></li>
+                <li><a href="https://www-verimag.imag.fr/~mounier/Enseignement/Software_Security/19RustVsC.pdf" download>Download PDF</a></li>
+                <li><a href="https://kolegite.com/EE_library/books_and_lectures/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5/Rust/The%20Rust%20programming%20language.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.cs.oswego.edu/~msoavelo/CSC344/Other/RustWiki.pdf" download>Download PDF</a></li>
+                <li><a href="https://kolegite.com/EE_library/books_and_lectures/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5/Rust/The%20Embedded%20Rust%20book.pdf" download>Download PDF</a></li>
+    
+            </ul>        
+        </section>
+
+        <section id="Videoes-section">
+            <h2>Videoes</h2>
+            <ul>
+                <li><a href="https://youtu.be/BpPEoZW5IiY?si=ZDOoDsL94T4ggrHD">Link 1</a></li>
+                <li><a href="https://youtu.be/qP7LzZqGh30?si=KoPz-66I_Y2fjRFV">Link 2</a></li>
+                <li><a href="https://youtube.com/playlist?list=PLndmg9UIKNomnnSxd__VKkUX4zT1YpSoY&si=ZMDURreigCr71FFU">Link 3</a></li>
+                <li><a href="https://youtu.be/ygL_xcavzQ4?si=hBZfNJBUEUfRn_eg">Link 4</a></li>
+                <li><a href="https://youtu.be/lzKeecy4OmQ?si=Ar_VFTA6quRhPzxN">Link 5</a></li>
+                <li><a href="https://youtube.com/playlist?list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ&si=whRa0KqakvAwrlQ_">Link 6</a></li>
+                            
+            </ul>
+        </section>
+        
+        <section id="Questions-section">
+            <h2>Questions</h2>
+            <ul>
+                
+              
+                <p>#1. What is Rust?</p>
+                <p>2. Why does Rust have high performance?</p>
+                <p>3. Why do Rust programs consume a small amount of memory?</p>
+                <p>4. How can you use cargo to build and test Rust code?</p>
+                <p>5. What kinds of programs can you write with Rust?</p>
+                <p>6. What is the difference between a Rust enum and struct?</p>
+                <p>7. Provide an example of an impl block in Rust</p>
+                <p>8. How do you create an infinite loop in Rust?</p>
+                <p>10. What happens to borrowed data at the end of a Rust function?</p>
+                <p>11. What happens to owned data at the end of a Rust function?</p>
+                <p>12. What does #[derive(Debug)] do in Rust?</p>
+                <p>13. What's the difference between .unwrap() and .expect() in Rust?</p>
+                <p>14. Why is the return keyword in Rust optional? Provide examples</p>
+                <p>15. What is an example of a match expression in Rust?</p>
+                <p>17. What happens if you add a new variant to a Rust enum without changing any other code?</p>
+                <p>18. What Rust keyword will iterate through a collection?</p>
+                <p>19. What Rust code would you write for printing information to the terminal?</p>
+                <p>20. What's a Rust Vec and when would you use it?</p>
+                <p>21. Can you create more than one variable using one line of Rust code?</p>
+                <p>22. What is a Rust trait?</p>
+                <p>23. What are generics in Rust?
+                <p>24. How can you borrow data in a Rust structure?</p>
+                <p>25. Is there a way to continue an outer loop from an inner loop in Rust?</p>
+                <p>26. What does the Rust question mark operator do?</p>
+                <p>27. Write an example of a generic Rust function</p>
+                <p>28. Write an example of a generic Rust structure</p>
+                <p>29. Provide a Rust trait example</p>
+                <p>30. What are the different types of Rust closures?</p>
+                <p>31. What are the differences between a Rust String and &str?</p>
+                <p>32. Describe the type state pattern in Rust</p>
+                <p>33. Describe the Rust new type pattern</p>
+                <p>34. What's the difference between .iter() and .into_iter()?</p>
+                <p>35. How can you convert a Rust Option into a Result?</p>
+                <p>36. How can you convert a Result into an Option in Rust?</p>
+                <p>37. Explain the .map() function on Rust's Iterator trait</p>
+                <p>38. What function converts a Rust iterator into a Vec?</p>
+                <p>39. What's a HashMapin Rust and when would you use it?</p>
+                <p>40. How can you create nested functions in Rust?</p>
+                <p>41. How does the Rust question mark operator convert errors to the correct type?;</p>
+                <p>42. Write a Rust function signature that can accept String, &str, Path, and PathBuf using a single parameter</p>
+                <p>43. How would you create a Rust iterator from a data structure you made?</p>
+                <p>44. Give an example of when would you use Arc in Rust</p>
+                <p>45. Is it possible to create a Rust ```Vec``` that contains different data types? Provide examples</p>
+                <p>46. What are the performance implications of using trait objects and dynamic dispatch in Rust?</p>
+                <p>47. What is a Rust supertrait?</p>
+                <p>48. When would you use a Rust declarative macro?</p>
+                <p>49. Write a Rust macro to implement a trait for a list of different types</p>
+                <p>50. Write an example of the type state pattern in Rust using generics</p>
+                <p>51. Why does this Rust code fail to compile when using threads?</p>
+                <p>52. How can you add a dependency from a git repository instead of a crate registry?</p>
+                <p>53. What are cargo workspaces?</p>
+                    
+
+            </ul>
+        </section>
+
+        <section id="Resource-section">
+            <h2>Resource</h2>
+            
+            <p><a href="https://www.rust-lang.org/">Rust Programming Language - Rust Learning Resources</a></p>
+            <p><a href="https://doc.rust-lang.org/rust-by-example/">Rust by Example - Rust Examples and Tutorials</a></p>
+   
+
+
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

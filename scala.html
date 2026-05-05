@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder - Your Ultimate Coding Resource</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                
+            
+     
+
+    
+    </header>
+    
+    <div>
+        
+        <nav>
+            <ul>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="swift.html">Swift</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="go.html">Go</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="typescript.html">TypeScript</a></li>
+                <li><a href="kotlin.html">Kotlin</a></li>
+                <li><a href="objec.html">Objective-C</a></li>
+                <li><a href="perl.html">Perl</a></li>
+                <li><a href="scala.html">Scala</a></li>
+                <!-- Add more language sections here -->
+            </ul>
+        </nav>
+    </div>
+    <div class="stringer">
+        
+            <ul>
+                <a href="#Information-section"><span>Information</span></a>
+                <a href="#Books-section"><span>Books</span></a>
+                <a href="#Videoes-section"><span>Videoes</span></a>
+                <a href="#Questions-section"><span>Questions</span></a>
+                <a href="#Resource-section"><span>Resource</span></a>
+
+                
+                <!-- Add more language sections here -->
+            </ul>
+      
+        
+    </div>
+    <main style=" margin-left: 200px;margin-top: 125px 0;">
+        <section id="Information-section">
+            <h2>Information</h2>
+            <p>Information About Scala Programming Language</h1>
+            <p>Scala is a general-purpose programming language that combines functional programming and object-oriented programming paradigms. Here's an overview of Scala:</p>
+            <ol>
+                <p><strong>History</strong>: Scala was developed by Martin Odersky and first released in 2003 as a scalable language.</li>
+                <p><strong>Key Features</strong>:
+                    <ul>
+                        <p><strong>Functional and Object-Oriented</strong>: Supports both paradigms, allowing concise and expressive code.</li>
+                        <p><strong>Static Typing</strong>: Helps catch errors at compile time and improves code robustness.</li>
+                        <p><strong>Concurrency</strong>: Features for concurrent programming, suitable for scalable applications.</li>
+                        <p><strong>Immutable Data Structures</strong>: Encourages immutability for thread-safe and functional code.</li>
+                        <p><strong>Type Inference</strong>: Powerful type inference capabilities reduce explicit type annotations.</li>
+                        <p><strong>Interoperability</strong>: Seamlessly interoperates with Java, leveraging Java libraries and frameworks.</li>
+                        <p><strong>Pattern Matching</strong>: Provides powerful pattern matching for data manipulation and conditional logic.</li>
+                        <p><strong>Functional Combinators</strong>: Includes functional combinators for working with collections.</li>
+                        <p><strong>Traits</strong>: Supports traits for code reuse and composition.</li>
+                    </ul>
+                </p>
+                <p><strong>Usage</strong>:
+                    <ul>
+                        <p><strong>Big Data and Distributed Computing</strong>: Commonly used in Apache Spark and Apache Flink for big data processing.</li>
+                        <p><strong>Web Development</strong>: Suitable for web development with Play Framework and Akka HTTP.</li>
+                        <p><strong>Functional Programming</strong>: Popular among developers interested in functional programming.</li>
+                        <p><strong>Desktop Applications</strong>: Can be used for desktop applications using JavaFX and ScalaFX.</li>
+                        <p><strong>Machine Learning</strong>: Used in machine learning projects with Apache Mahout and Breeze.</li>
+                        <p><strong>Financial Applications</strong>: Used in finance for trading systems and financial modeling.</li>
+                    </ul>
+                </p>
+                <p><strong>Community and Support</strong>:
+                    <ul>
+                        <p>Scala has a growing community of developers and is actively maintained by Lightbend.</li>
+                        <p>Online resources, tutorials, forums, and documentation for Scala are widely available.</li>
+                    </ul>
+                </p>
+            </ol>
+        
+            
+        </section>
+
+        <section id="Books-section">
+            <h2>Books</h2>
+            <ul>
+                <li><a href="https://pllab.github.io/cs162-spring17/scala/Programming-Scala.pdf" download>Download PDF</a></li>
+                <li><a href="https://pllab.github.io/cs162-spring17/scala/Programming-in-Scala.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.handsonscala.com/hands-on-scala-programming-compact-sample.pdf" download>Download PDF</a></li>
+                <li><a href="https://www.lirmm.fr/~ducour/Doc-objets/scalabook.pdf" download>Download PDF</a></li>
+                <li><a href="https://alvinalexander.com/downloads/scala-book/ScalaBook.pdf" download>Download PDF</a></li>
+                <li><a href="https://s3-ap-southeast-1.amazonaws.com/tv-prod/documents%2Fnull-Scala+Cookbook.pdf" download>Download PDF</a></li>
+                <li><a href="https://books-library.net/files/books-library.net-10211445Tf3F5.pdf" download>Download PDF</a></li>
+                <li><a href="https://cdn.bookey.app/files/pdf/book/en/programming-in-scala.pdf" download>Download PDF</a></li>
+                <li><a href="https://cdn.bookey.app/files/pdf/book/en/programming-in-scala.pdf" download>Download PDF</a></li>
+            </ul>        
+        </section>
+
+        <section id="Videoes-section">
+            <h2>Videoes</h2>
+            <ul>
+                <li><a href="https://youtu.be/i9o70PMqMGY?si=6-Si4gQy1M8xBX_J">Link 1</a></li>
+                <li><a href="https://youtube.com/playlist?list=PLS1QulWo1RIagob5D6kMIAvu7DQC5VTh3&si=ZpRfwtwZV46-0RDp">Link 2</a></li>
+                <li><a href="https://youtu.be/OfngvXKNkpM?si=oUzkWU2I9OqkX4na">Link 3</a></li>
+                <li><a href="https://youtube.com/playlist?list=PLgPJX9sVy92wUdX7uVMgEzREgJrXiRdUC&si=n8RzCyQZVUB4p0ZM">Link 4</a></li>
+                <li><a href="https://youtube.com/playlist?list=PLat4EDcV8F_KhVdZnFjHhspERzTKgFmOa&si=1HX7C_f5y4JWIUqH">Link 5</a></li>
+            </ul>
+        </section>
+        
+        <section id="Questions-section">
+            <h2>Questions</h2>
+            <ul>
+                <p>1.What is Scala and why is it used?</p>
+                <p>2.How does Scala differ from Java?</p>
+                <p>3.What are the key features of Scala?</p>
+                <p>4.Explain the concept of immutability in Scala.</p>
+                <p>5.What is the difference between val and var in Scala?</p>
+                <p>6.What is pattern matching in Scala?</p>
+                <p>7Describe the concept of higher-order functions in Scala.</p>
+                <p>8.What are Scala collections? Name a few collection types.</p>
+                <p>9.Explain the Option type in Scala and its significance.</p>
+                <p>10.What is the purpose of the map() function in Scala collections?</p>
+                <p>11.How does Scala handle concurrency?</p>
+                <p>12.What are Futures and Promises in Scala?</p>
+                <p>12.Describe the Actor model in Scala.</p>
+                <p>13.What is the Akka toolkit, and how is it related to Scala?</p>
+                <p>14.Explain the concept of Traits in Scala.</p>
+                <p>15.What is the difference between an abstract class and a trait in Scala?</p>
+                <p>16.How does Scala support functional programming paradigms?</p>
+                <p>17.What are case classes in Scala?</p>
+                <p>18.What is lazy evaluation in Scala?</p>
+                <p>19.How does Scala handle exceptions?</p>
+                <p>20.Explain currying in Scala.</p>
+                <p>21.What is tail recursion optimization in Scala?</p>
+                <p>22.Describe the concept of implicit parameters in Scala.</p>
+                <p>23.How does Scala support type inference?</p>
+                <p>24.What is the REPL in Scala?</p>
+                <p>25.Explain the concept of implicits in Scala.</p>
+                <p>26.How does Scala handle null values?</p>
+                <p>27.What are singleton objects in Scala?</p>
+                <p>28.Describe the concept of type classes in Scala.</p>
+                <p>29.How does Scala support operator overloading?</p>
+                <p>30.What are higher-kinded types in Scala?</p>
+                <p>31.Explain the concept of for-comprehensions in Scala.</p>
+                <p>32.What is the ScalaTest framework used for?</p>
+                <p>33.Describe the concept of parallel collections in Scala.</p>
+                <p>34.What is the Scala build tool (SBT) and how is it used?</p>
+                <p>35.Explain the concept of type erasure in Scala.</p>
+                <p>36.What are macros in Scala?</p>
+                <p>37.How does Scala handle implicits conversions?</p>
+                <p>38.Describe the concept of self-types in Scala.</p>
+                <p>39.What is the Scala Worksheet used for?</p>
+                <p>40.Explain the concept of partial functions in Scala.</p>
+                <p>41.How does Scala support domain-specific languages (DSLs)?</p>
+                <p>42.What are the advantages of using Scala for web development?</p>
+                <p>43.Describe the Actor supervision model in Akka.</p>
+                <p>44.How does Scala interact with Java libraries?</p>
+                <p>45.What is the Play Framework, and how is it related to Scala?</p>
+                <p>46.Explain the concept of traits as mixins in Scala.</p>
+                <p>47.How does Scala support concurrent programming using Futures?</p>
+                <p>48.Describe the concept of type bounds in Scala generics.</p>
+                <p>49.What are implicit classes in Scala?</p>
+              
+                <li> </li>
+
+            </ul>
+        </section>
+
+        <section id="Resource-section">
+            <h2>Resource</h2>
+            
+            <p><a href="https://docs.scala-lang.org/">Scala Documentation - Scala Language Documentation</a></p>
+            <p><a href="https://www.scala-exercises.org/">Scala Exercises - Interactive Scala Learning Platform</a></p>
+      
+
+
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

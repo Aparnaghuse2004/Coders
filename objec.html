@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder - Your Ultimate Coding Resource</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                
+            
+     
+
+    
+    </header>
+    
+    <div>
+        
+        <nav>
+            <ul>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="Swift.html">Swift</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="go.html">Go</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="typescript.html">TypeScript</a></li>
+                <li><a href="kotlin.html">Kotlin</a></li>
+                <li><a href="objec.html">Objective-C</a></li>
+                <li><a href="perl.html">Perl</a></li>
+                <li><a href="scala.html">Scala</a></li>
+                <!-- Add more language sections here -->
+            </ul>
+        </nav>
+    </div>
+    <div class="stringer">
+        
+            <ul>
+                <a href="#Information-section"><span>Information</span></a>
+                <a href="#Books-section"><span>Books</span></a>
+                <a href="#Videoes-section"><span>Videoes</span></a>
+                <a href="#Questions-section"><span>Questions</span></a>
+                <a href="#Resource-section"><span>Resource</span></a>
+
+                
+                <!-- Add more language sections here -->
+            </ul>
+      
+        
+    </div>
+    <main style=" margin-left: 200px;margin-top: 125px 0;">
+        <section id="Information-section">
+            <h2>Information</h2>
+           
+            <p>Information About Objective-C Programming Language</h1>
+            <p>Objective-C is a programming language primarily used for macOS and iOS app development. Here's an overview of Objective-C:</p>
+            <ol>
+                <p><strong>History</strong>: Objective-C was developed in the early 1980s by Brad Cox and Tom Love. It became the primary language for Apple's platforms.</li>
+                <p><strong>Key Features</strong>:
+                    <ul>
+                        <p><strong>Object-Oriented</strong>: Objective-C supports classes, objects, inheritance, polymorphism, and encapsulation.</li>
+                        <p><strong>Dynamic Typing</strong>: It is dynamically typed, allowing flexibility in variable types and method calls.</li>
+                        <p><strong>Message Passing</strong>: Objects communicate through message passing, a key aspect of its syntax and paradigm.</li>
+                        <p><strong>Memory Management</strong>: It uses manual memory management with methods like retain, release, and autorelease, later adopting ARC.</li>
+                        <p><strong>C Language Compatibility</strong>: Objective-C is compatible with C, enabling integration with C libraries.</li>
+                        <p><strong>Foundation Framework</strong>: It includes the Foundation framework for common tasks like data storage, networking, and more.</li>
+                        <p><strong>iOS and macOS Development</strong>: Objective-C is used for developing apps for Apple's platforms.</li>
+                        <p><strong>Interface Builder</strong>: It integrates with Interface Builder for designing app interfaces visually.</li>
+                    </ul>
+                </p>
+                <p><strong>Usage</strong>:
+                    <ul>
+                        <p><strong>iOS and macOS App Development</strong>: Widely used for developing apps for iPhone, iPad, Mac, and Apple Watch.</li>
+                        <p><strong>Legacy Codebases</strong>: Many existing iOS and macOS applications are written in Objective-C.</li>
+                        <p><strong>Cross-Platform Development</strong>: Can be used for cross-platform development with tools like Xamarin.</li>
+                        <p><strong>Game Development</strong>: Used in game development for macOS and iOS platforms.</li>
+                        <p><strong>Desktop Applications</strong>: Can be used for developing desktop applications on macOS.</li>
+                    </ul>
+                </p>
+                <p><strong>Community and Support</strong>:
+                    <ul>
+                        <p>Objective-C has a dedicated community of developers, although its popularity has decreased with the rise of Swift.</li>
+                        <p>Online resources, tutorials, and documentation for Objective-C are available for maintaining legacy code and transitioning to Swift.</li>
+                    </ul>
+                </p>
+            </ol>
+            
+            
+        </section>
+
+        <section id="Books-section">
+            <h2>Books</h2>
+            <ul>
+                <li><a href="https://notalentgeek.github.io/note/note/project/project-independent/pi-brp-beginning-c-programming/document/20170807-1504-cet-1-book-and-source-1.pdf" download>Download PDF</a></li>
+                <li><a href="https://cds.iisc.ac.in/wp-content/uploads/DS286.AUG2016.Lab2_.cpp_tutorial.pdf" download>Download PDF</a></li>
+                <li><a href="https://faculty.ksu.edu.sa/sites/default/files/ObjectOrientedProgramminginC4thEdition.pdf" download>Download PDF</a>
+                <li> <a href="https://www.cet.edu.in/noticefiles/285_OOPS%20lecture%20notes%20Complete.pdf" download>Download PDF5</a></li>
+                <li> <a href="https://esseps.com/lander?query=gcp%20cloud%20platform&utm_term=gcp%20cloud%20platform,cyber%20security%20detection,enterprise%20cyber%20security&camp_id=309914&gclid=EAIaIQobChMI9Y3rtdPwhQMVRCODAx168g23EAEYASAAEgLFmfD_BwE&gclid=EAIaIQobChMI9Y3rtdPwhQMVRCODAx168g23EAEYASAAEgLFmfD_BwE" download>Download PDF</a></li></li>
+            
+            </ul>        
+        </section>
+
+        <section id="Videoes-section">
+            <h2>Videoes</h2>
+            <ul>
+                <li><a href="https://youtu.be/yGB9jhsEsr8?si=Iw5hjdb6DfHaBn-D">Link 1</a></li>
+                <li><a href="https://youtu.be/-TkoO8Z07hI?si=KeHnmZCYzEuKdbM7">Link 2</a></li>
+                <li><a href="https://youtu.be/oOmbSpOzvYg?si=dZW62LUh1EJ4vfjZ">Link 3</a></li>
+                <li><a href="https://youtu.be/_FFRRMEXdBU?si=3rULWHIY9cLx2uxY">Link 4</a></li>
+                <li><a href="https://youtu.be/oYyi4aCaQxM?si=ZnpWkiBYvG5cXXcz">Link 5</a></li>
+            
+            </ul>
+        </section>
+        
+        <section id="Questions-section">
+            <h2>Questions</h2>
+            <ul>
+                <p>1.What is Objective C & why it is used for? </p>
+                <p>2. What Objective-C program consists of? </p>
+                <p>3. What is the protocol in Objective C? </p>
+                <p>4. Explain what is OOP? </p>
+                <p>5. What is the difference between polymorphism and abstraction? </p>
+                <p>6. What is parsing? Mention which class can you use for parsing of XML in iPhone? </p>
+                <p>7. What is an accessor method? </p>
+                <p>8. Which class is used to establish a connection between applications to the web server? </p>
+                <p>9. List out the methods used in NSURL connection? </p>
+                <p>10. Explain class definition in Objective-C? </p>
+                <p>11. What are the characteristics of the category? </p>
+                <p>12. What is the use of category in Objective-C? </p>
+                <p>13. What is single inheritance in Objective-C? </p>
+                <p>14. What is synthesized in Objective-C? </p>
+                <p>15. When would you use NSArray and NSMutableArray? </p>
+                <p>16. How is string represented in Objective-C? </p>
+                <p>17. Explain what is data encapsulation in Objective-C? </p>
+                <p>18. What are objective- C blocks? </p>
+                <p>19. Explain how to call a function in Objective-C? </p>
+                <p>20. What is the main difference between function calls and messages? </p>
+                <p>21. Explain how the class “IMPLEMENTATION” is represented in Objective-C? </p>
+                <p>22. How messaging works in Objective-C? </p>
+                <p>23. What is dot notation? </p>
+                <p>24. Explain types of protocol in Objective-C? </p>
+                <p>25.  What is the difference between #import and #include in Objective-C? </p>
+                <p>26. What is fast enumeration? </p>
+                <p>27. Explain what is @synthesize in Objective-C? </p>
+                <p>28. Explain how to call function in Objective-C? </p>
+                <p>29. Mention whether NSObject is a parent class or derived class. </p>
+                <p>30. Explain the difference between atomic and nonatomic synthesized properties. </p>
+                <p>31. What is GCD? What are advantages over NSThread? </p>
+                <p>32.  What is responder chain? </p>
+                <p>33. What is id? </p>
+                <p>34. Does Objective-C have function overloading? </p>
+                <p>35. What is delegate? Can delegates be retained? </p>
+                <p>36. What is class extension? Why do we require them? </p>
+                <p>37. Can you write setter method for a retain property? </p>
+                <p>38. How does dispatch_once manages to run only once? </p>
+                <p>39. Is Objective C, a dynamic language? True/False, explain? </p>
+                <p>40. What are the different types of protocols? </p>
+                <p>41. How is #import different from #include? </p>
+                <p>42. What happens when you create a block? </p>
+                <p>43. What is the isa member? </p>
+                <p>44. What happens with the objects if the array is released? </p>
+                <p>45. How can we put nil it into dictionary/array? </p>
+                <p>46. What happen if we send any message to an object which is released? </p>
+                <p>47. What is bundle? </p>
+                <p>48. What is the difference between a function and a stored procedure in .NET? </p>
+                <p>49. What are the constructor types present in C# .NET? </p>
+                <p>50. What are some of the advantages of using a session? </p>
+            </ul>
+        </section>
+
+        <section id="Resource-section">
+            <h2>Resource</h2>
+            
+            <p><a href="https://developer.apple.com/documentation/objectivec">Apple Developer Documentation - Objective-C Programming Guide</a></p>
+            <p><a href="https://www.objc.io/">Objc.io - Objective-C Resources and Articles</a></p>
+
+
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

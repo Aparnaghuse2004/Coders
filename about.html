@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+    <style>
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #05ab48;
+}
+
+.containers {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    margin-top: 150px;
+    background-color: rgba(62, 99, 77, 0.201);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(18, 197, 161, 0.1);
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header ul a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-top: 100px; /* Adjust margin to accommodate fixed header */
+    padding: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007bff; /* Blue color */
+    margin-top: 0;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333; /* Dark color */
+    color: #c7b7b7;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">Coder</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="#about-section">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+ 
+    </header>
+    <body>
+        <canvas id="c"></canvas>
+<body>
+    <div class="containers">
+        <h1>About Coder</h1>
+        
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>At Coder, our mission is to make high-quality coding education accessible to everyone, everywhere. Whether you're a beginner looking to learn your first programming language or an experienced developer seeking to deepen your expertise, we provide the resources and support you need to succeed.</p>
+        </div>
+
+        <div class="section">
+            <h2>Who We Are</h2>
+            <p>Coder is a community of passionate educators, experienced developers, and tech enthusiasts dedicated to empowering individuals through education. Our instructors are industry professionals who bring real-world experience into their teaching, ensuring that our courses are not only informative but also relevant to today's fast-paced tech landscape.</p>
+        </div>
+
+        <div class="section">
+            <h2>What We Offer</h2>
+            <h3>Comprehensive Courses</h3>
+            <p>Our catalog includes a wide range of courses covering various programming languages, frameworks, and tools. From Python and JavaScript to data science and web development, there's something for everyone.</p>
+            <h3>Expert Instructors</h3>
+            <p>Learn from the best in the industry. Our instructors are not just teachers; they are seasoned professionals who have worked with leading tech companies and startups.</p>
+            <h3>Flexible Learning</h3>
+            <p>Learn at your own pace with our flexible online courses. Whether you prefer video tutorials, interactive coding exercises, or reading materials, we cater to different learning styles.</p>
+            <h3>Career Development</h3>
+            <p>Beyond teaching you how to Coder, we help you build a career. From resume writing tips to interview preparation and job placement assistance, we support you every step of the way.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why Choose Coder?</h2>
+            <p><strong>Quality Education:</strong> We are committed to providing top-notch education. Our courses are carefully crafted to ensure clarity, engagement, and practical knowledge.</p>
+            <p><strong>Affordable Learning:</strong> Quality education shouldn't be a luxury. We offer competitive pricing and various financial aid options to make learning affordable for everyone.</p>
+            <p><strong>Continuous Improvement:</strong> Technology evolves rapidly, and so do we. We regularly update our courses to reflect the latest industry trends and advancements.</p>
+            <p><strong>Success Stories:</strong> Join thousands of successful graduates who have transformed their careers with Coder. Read their stories and get inspired to start your own journey.</p>
+        </div>
+
+        <div class="section">
+            <h2>Join Us</h2>
+            <p>Ready to start learning? Explore our courses, join our community, and take the first step towards mastering the skills of tomorrow. At Coder, your potential is limitless.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder - Your Ultimate Coding Resource</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="showprofile.css">
+    <script src="showprofile.js"></script>
+    <script src="home.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <h1 style="text-align: center;color: aqua;"><span style="border-style: double;padding: 10px;">CODER</span></h1>
+        <ul >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           
+                <button type='button' onclick="popup('profile-popup')">Profile</button>
+       
+            
+        </ul>
+        <div class="popup-container" id="profile-popup">
+            <div class="login popup">
+                <form method="POST" action="">
+                    <h2>
+                        <span>PROFILE</span>
+                        <button type="reset" onclick="popup('profile-popup')">X</button>
+                    </h2>
+                    <div class="containers">
+                        <img src="" alt="Profile Picture" class="profile-image" id="profileImage">
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profileName"></span></p>
+                            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                            <p><strong>Occupation:</strong> <span id="profileOccupation"></span></p>
+                            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+                        </div>
+                        <div class="action-btns">
+                
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                
+            
+     
+
+    
+    </header>
+    
+    <div>
+        
+        <nav>
+            <ul>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="swift.html">Swift</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="go.html">Go</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="typescript.html">TypeScript</a></li>
+                <li><a href="kotlin.html">Kotlin</a></li>
+                <li><a href="objec.html">Objective-C</a></li>
+                <li><a href="perl.html">Perl</a></li>
+                <li><a href="scala.html">Scala</a></li>
+                <!-- Add more language sections here -->
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="stringer">
+        
+            <ul>
+                <a href="#Information-section"><span>Information</span></a>
+                <a href="#Books-section"><span>Books</span></a>
+                <a href="#Videoes-section"><span>Videoes</span></a>
+                <a href="#Questions-section"><span>Questions</span></a>
+                <a href="#Resource-section"><span>Resource</span></a>
+
+                
+                <!-- Add more language sections here -->
+            </ul>
+      
+        
+    </div>
+    <main style=" margin-left: 200px;margin-top: 125px 0;">
+        <section id="Information-section">
+            <h2>Information</h2>
+            <p>
+                C  is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used
+                 and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in 
+                 operating systems, device drivers, and protocol stacks, but its use in application software has been decreasing. C is commonly used
+                  on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.
+                A successor to the programming language B, C was originally developed at Bell Labs by Ritchie between 1972 and 1973 to construct 
+                utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system. During the 1980s, C gradually
+                 gained popularity. It has become one of the most widely used programming languages, with C compilers available for practically 
+                 all modern computer architectures and operating systems. The book The C Programming Language, co-authored by the original language designer, 
+                 served for many years as the de facto standard for the language.C has been standardized since 1989 by the American National Standards 
+                 Institute (ANSI) and the International Organization for Standardization (ISO).
+                C is an imperative procedural language, supporting structured programming, lexical variable scope, and recursion, with a static 
+                type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to 
+                machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage 
+                cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of 
+                computer platforms and operating systems with few changes to its source code.
+                Since 2000, C has consistently ranked among the top two languages in the TIOBE index, a measure of the popularity of programming 
+                languages.
+            </br>
+        </br>
+            The origin of C is closely tied to the development of the Unix operating system, originally implemented in assembly language on a 
+            PDP-7 by Dennis Ritchie and Ken Thompson, incorporating several ideas from colleagues. Eventually, they decided to port the operating
+             system to a PDP-11. The original PDP-11 version of Unix was also developed in assembly language.
+            Structures and the Unix kernel re-write
+            At Version 4 Unix, released in November 1973, the Unix kernel was extensively re-implemented in C. By this time, the C language had acquired some powerful features such as struct types
+            The preprocessor was introduced around 1973 at the urging of Alan Snyder and also in recognition of the usefulness of the file-inclusion mechanisms available in BCPL and PL/I. Its original version provided only included files and simple string replacements: #include and #define of parameterless macros. Soon after that, it was extended, mostly by Mike Lesk and then by John Reiser, to incorporate macros with arguments and conditional compilation.[8]
+            Unix was one of the first operating system kernels implemented in a language other than assembly. Earlier instances include the Multics system (which was written in PL/I) and Master Control Program (MCP) for the Burroughs B5000 (which was written in ALGOL) in 1961. In around 1977, Ritchie and Stephen C. Johnson made further changes to the language to facilitate portability of the Unix operating system. Johnson's Portable C Compiler served as the basis for several implementations of C on new platforms.[15]
+            K&R C
+            The cover of the book The C Programming Language, first edition, by Brian Kernighan and Dennis Ritchie
+            In 1978, Brian Kernighan and Dennis Ritchie published the first edition of The C Programming Language.[17] Known as K&R from the initials of its authors, the book served for many years as an informal specification of the language. The version of C that it describes is commonly referred to as "K&R C". As this was released in 1978, it is now also referred to as C78.[18] The second edition of the book[19] covers the later ANSI C standard, described below.
+            
+            K&R introduced several language features:
+            
+            Standard I/O library
+            long int data type
+            unsigned int data type
+            Compound assignment operators of the form =op (such as =-) were changed to the form op= (that is, -=) to remove the semantic ambiguity
+             created by constructs such as i=-10, which had been interpreted as i =- 10 (decrement i by 10) instead of the possibly intended i = 
+             -10 (let i be −10).
+            Even after the publication of the 1989 ANSI standard, for many years K&R C was still considered the "lowest common denominator" to which
+            C programmers restricted themselves when maximum portability was desired, since many older compilers were still in use, and because 
+            carefully written K&R C code can be legal Standard C as well.
+            In early versions of C, only functions that return types other than int must be declared if used before the function definition; 
+            functions used without prior declaration were presumed to return type int.        
+            For example:            
+            long some_function(); /* This is a function declaration, so the compiler can know the name and return type of this function. */
+            /* int */ other_function(); /* Another function declaration.  Because this is an early version of C, there is an implicit 'int'
+             type here.  A comment shows where the explicit 'int' type specifier would be required in later versions. */            
+            /* int */ calling_function() /* This is a function definition, including the body of the code following in the { curly brackets }. 
+            Because no return type is specified, the function implicitly returns an 'int' in this early version of C. */
+            {
+                long test1;
+                register /* int */ test2; /* Again, note that 'int' is not required here. The 'int' type specifier */
+                                          /* in the comment would be required in later versions of C. */
+                                          /* The 'register' keyword indicates to the compiler that this variable should */
+                                          /* ideally be stored in a register as opposed to within the stack frame. */
+                test1 = some_function();
+                if (test1 > 1)
+                      test2 = 0;
+                else
+                      test2 = other_function();
+                return test2;
+            }
+            The int type specifiers which are commented out could be omitted in K&R C, but are required in later standards.            
+            Since K&R function declarations did not include any information about function arguments, function parameter type checks
+             were not performed, although some compilers would issue a warning message if a local function was called with the wrong
+              number of arguments, or if different calls to an external function used different numbers or types of arguments. Separate 
+              tools such as Unix's lint utility were developed that (among other things) could check for consistency of function use 
+              across multiple source files.            
+            In the years following the publication of K&R C, several features were added to the language, supported by compilers
+             from AT&T and some other vendors. These included:            
+            void functions (i.e., functions with no return value)
+            functions returning struct or union types (previously only a single pointer, integer or float could be returned)
+            assignment for struct data types
+            enumerated types (previously, preprocessor definitions for integer fixed values were used, e.g. #define GREEN 3)
+            The large number of extensions and lack of agreement on a standard library, together with the language popularity 
+            and the fact that not even the Unix compilers precisely implemented the K&R specification, led to the necessity of 
+            standardization.[citation needed]
+            
+            ANSI C and ISO C
+            Main article: ANSI C
+            During the late 1970s and 1980s, versions of C were implemented for a wide variety of mainframe computers, minicomputers, and microcomputers, including the IBM PC, as its popularity began to increase significantly.
+            
+            In 1983, the American National Standards Institute (ANSI) formed a committee, X3J11, to establish a standard specification of C. X3J11 based the C standard on the Unix implementation; however, the non-portable portion of the Unix C library was handed off to the IEEE working group 1003 to become the basis for the 1988 POSIX standard. In 1989, the C standard was ratified as ANSI X3.159-1989 "Programming Language C". This version of the language is often referred to as ANSI C, Standard C, or sometimes C89.
+            
+            In 1990, the ANSI C standard (with formatting changes) was adopted by the International Organization for Standardization (ISO) as ISO/IEC 9899:1990, which is sometimes called C90. Therefore, the terms "C89" and "C90" refer to the same programming language.
+            
+            ANSI, like other national standards bodies, no longer develops the C standard independently, but defers to the international C standard, maintained by the working group ISO/IEC JTC1/SC22/WG14. National adoption of an update to the international standard typically occurs within a year of ISO publication.
+            
+            One of the aims of the C standardization process was to produce a superset of K&R C, incorporating many of the subsequently introduced unofficial features. The standards committee also included several additional features such as function prototypes (borrowed from C++), void pointers, support for international character sets and locales, and preprocessor enhancements. Although the syntax for parameter declarations was augmented to include the style used in C++, the K&R interface continued to be permitted, for compatibility with existing source code.
+            
+            C89 is supported by current C compilers, and most modern C code is based on it. Any program written only in Standard C and without any hardware-dependent assumptions will run correctly on any platform with a conforming C implementation, within its resource limits. Without such precautions, programs may compile only on a certain platform or with a particular compiler, due, for example, to the use of non-standard libraries, such as GUI libraries, or to a reliance on compiler- or platform-specific attributes such as the exact size of data types and byte endianness.
+            
+            In cases where code must be compilable by either standard-conforming or K&R C-based compilers, the __STDC__ macro can be used to split the code into Standard and K&R sections to prevent the use on a K&R C-based compiler of features available only in Standard C.
+            
+            After the ANSI/ISO standardization process, the C language specification remained relatively static for several years. In 1995, Normative Amendment 1 to the 1990 C standard (ISO/IEC 9899/AMD1:1995, known informally as C95) was published, to correct some details and to add more extensive support for international character sets.[21]
+            
+            C99
+            Main article: C99
+            The C standard was further revised in the late 1990s, leading to the publication of ISO/IEC 9899:1999 in 1999, which is commonly referred to as "C99". It has since been amended three times by Technical Corrigenda.[22]
+            
+            C99 introduced several new features, including inline functions, several new data types (including long long int and a complex type to represent complex numbers), variable-length arrays and flexible array members, improved support for IEEE 754 floating point, support for variadic macros (macros of variable arity), and support for one-line comments beginning with //, as in BCPL or C++. Many of these had already been implemented as extensions in several C compilers.
+            
+            C99 is for the most part backward compatible with C90, but is stricter in some ways; in particular, a declaration that lacks a type specifier no longer has int implicitly assumed. A standard macro __STDC_VERSION__ is defined with value 199901L to indicate that C99 support is available. GCC, Solaris Studio, and other C compilers now[when?] support many or all of the new features of C99. The C compiler in Microsoft Visual C++, however, implements the C89 standard and those parts of C99 that are required for compatibility with C++11.[23][needs update]
+            
+            In addition, the C99 standard requires support for identifiers using Unicode in the form of escaped characters (e.g. \u0040 or \U0001f431) and suggests support for raw Unicode names.
+            
+            C11
+            Main article: C11 (C standard revision)
+            In 2007, work began on another revision of the C standard, informally called "C1X" until its official publication of ISO/IEC 9899:2011 on 2011-12-08. The C standards committee adopted guidelines to limit the adoption of new features that had not been tested by existing implementations.
+            
+            The C11 standard adds numerous new features to C and the library, including type generic macros, anonymous structures, improved Unicode support, atomic operations, multi-threading, and bounds-checked functions. It also makes some portions of the existing C99 library optional, and improves compatibility with C++. The standard macro __STDC_VERSION__ is defined as 201112L to indicate that C11 support is available.
+            
+            C17
+            Main article: C17 (C standard revision)
+            Published in June 2018 as ISO/IEC 9899:2018, C17 is the current standard for the C programming language. It introduces no new language features, only technical corrections, and clarifications to defects in C11. The standard macro __STDC_VERSION__ is defined as 201710L to indicate that C17 support is available.
+            
+            C23
+            Main article: C23 (C standard revision)
+            C23 is the informal name for the next (after C17) major C language standard revision. It was informally known as "C2X" through most of its development. C23 is expected to be published in early 2024 as ISO/IEC 9899:2024.[24] The standard macro __STDC_VERSION__ is defined as 202311L to indicate that C23 support is available.
+            
+            C2Y
+            C2Y is a temporary informal name for the next major C language standard revision, after C23 (C2X), that is hoped to be released later in the 2020s decade, per the two in "C2Y". An early working draft of C2Y was released in February 2024 as N3220 by the working group ISO/IEC JTC1/SC22/WG14.[25]
+            
+            Embedded C
+            Main article: Embedded C
+            Historically, embedded C programming requires nonstandard extensions to the C language in order to support exotic features such as fixed-point arithmetic, multiple distinct memory banks, and basic I/O operations.
+            
+            In 2008, the C Standards Committee published a technical report extending the C language[26] to address these issues by providing a common standard for all implementations to adhere to. It includes a number of features not available in normal C, such as fixed-point arithmetic, named address spaces, and basic I/O hardware addressing.
+            
+            Syntax
+            Main article: C syntax
+            C has a formal grammar specified by the C standard.[27] Line endings are generally not significant in C; however, line boundaries do have significance during the preprocessing phase. Comments may appear either between the delimiters /* and */, or (since C99) following // until the end of the line. Comments delimited by /* and */ do not nest, and these sequences of characters are not interpreted as comment delimiters if they appear inside string or character literals.[28]
+            
+            C source files contain declarations and function definitions. Function definitions, in turn, contain declarations and statements. Declarations either define new types using keywords such as struct, union, and enum, or assign types to and perhaps reserve storage for new variables, usually by writing the type followed by the variable name. Keywords such as char and int specify built-in types. Sections of code are enclosed in braces ({ and }, sometimes called "curly brackets") to limit the scope of declarations and to act as a single statement for control structures.
+            
+            As an imperative language, C uses statements to specify actions. The most common statement is an expression statement, consisting of an expression to be evaluated, followed by a semicolon; as a side effect of the evaluation, functions may be called and variables may be assigned new values. To modify the normal sequential execution of statements, C provides several control-flow statements identified by reserved keywords. Structured programming is supported by if ... [else] conditional execution and by do ... while, while, and for iterative execution (looping). The for statement has separate initialization, testing, and reinitialization expressions, any or all of which can be omitted. break and continue can be used within the loop. Break is used to leave the innermost enclosing loop statement and continue is used to skip to its reinitialisation. There is also a non-structured goto statement which branches directly to the designated label within the function. switch selects a case to be executed based on the value of an integer expression. Different from many other languages, control-flow will fall through to the next case unless terminated by a break.
+            
+            Expressions can use a variety of built-in operators and may contain function calls. The order in which arguments to functions and operands to most operators are evaluated is unspecified. The evaluations may even be interleaved. However, all side effects (including storage to variables) will occur before the next "sequence point"; sequence points include the end of each expression statement, and the entry to and return from each function call. Sequence points also occur during evaluation of expressions containing certain operators (&&, ||, ?: and the comma operator). This permits a high degree of object code optimization by the compiler, but requires C programmers to take more care to obtain reliable results than is needed for other programming languages.
+            
+            Kernighan and Ritchie say in the Introduction of The C Programming Language: "C, like any other language, has its blemishes. Some of the operators have the wrong precedence; some parts of the syntax could be better."[29] The C standard did not attempt to correct many of these blemishes, because of the impact of such changes on already existing software.
+            
+            Character set
+            The basic C source character set includes the following characters:
+            
+            Lowercase and uppercase letters of ISO Basic Latin Alphabet: a–z A–Z
+            Decimal digits: 0–9
+            Graphic characters: ! " # % & ' ( ) * + , - . / : ; < = > ? [ \ ] ^ _ { | } ~
+            Whitespace characters: space, horizontal tab, vertical tab, form feed, newline
+            Newline indicates the end of a text line; it need not correspond to an actual single character, although for convenience C treats it as one.
+            
+            Additional multi-byte encoded characters may be used in string literals, but they are not entirely portable. The latest C standard (C11) allows multi-national Unicode characters to be embedded portably within C source text by using \uXXXX or \UXXXXXXXX encoding (where the X denotes a hexadecimal character), although this feature is not yet widely implemented.
+            
+            The basic C execution character set contains the same characters, along with representations for alert, backspace, and carriage return. Run-time support for extended character sets has increased with each revision of the C standard.
+            
+            Reserved words
+            The following reserved words are case sensitive.
+            
+            C89 has 32 reserved words, also known as keywords, which are the words that cannot be used for any purposes other than those for which they are predefined:
+            
+            auto
+            break
+            case
+            char
+            const
+            continue
+            default
+            do
+            double
+            else
+            enum
+            extern
+            float
+            for
+            goto
+            if
+            int
+            long
+            register
+            return
+            short
+            signed
+            sizeof
+            static
+            struct
+            switch
+            typedef
+            union
+            unsigned
+            void
+            volatile
+            while
+            C99 reserved five more words: (‡ is an alternative spelling alias for a C23 keyword)
+            
+            inline
+            restrict
+            _Bool ‡
+            _Complex
+            _Imaginary
+            C11 reserved seven more words:[30] (‡ is an alternative spelling alias for a C23 keyword)
+            
+            _Alignas ‡
+            _Alignof ‡
+            _Atomic
+            _Generic
+            _Noreturn
+            _Static_assert ‡
+            _Thread_local ‡
+            C23 reserved fifteen more words:
+            
+            alignas
+            alignof
+            bool
+            constexpr
+            false
+            nullptr
+            static_assert
+            thread_local
+            true
+            typeof
+            typeof_unqual
+            _BitInt
+            _Decimal32
+            _Decimal64
+            _Decimal128
+            Most of the recently reserved words begin with an underscore followed by a capital letter, because identifiers of that form were previously reserved by the C standard for use only by implementations. Since existing program source code should not have been using these identifiers, it would not be affected when C implementations started supporting these extensions to the programming language. Some standard headers do define more convenient synonyms for underscored identifiers. Some of those words were added as keywords with their conventional spelling in C23 and the corresponding macros were removed.
+            
+            Prior to C89, entry was reserved as a keyword. In the second edition of their book The C Programming Language, which describes what became known as C89, Kernighan and Ritchie wrote, "The ... [keyword] entry, formerly reserved but never used, is no longer reserved." and "The stillborn entry keyword is withdrawn."[31]
+            
+            Operators
+            Main article: Operators in C and C++
+            C supports a rich set of operators, which are symbols used within an expression to specify the manipulations to be performed while evaluating that expression. C has operators for:
+            
+            arithmetic: +, -, *, /, %
+            assignment: =
+            augmented assignment: +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=
+            bitwise logic: ~, &, |, ^
+            bitwise shifts: <<, >>
+            Boolean logic: !, &&, ||
+            conditional evaluation: ? :
+            equality testing: ==, !=
+            calling functions: ( )
+            increment and decrement: ++, --
+            member selection: ., ->
+            object size: sizeof
+            type: typeof, typeof_unqual since C23
+            order relations: <, <=, >, >=
+            reference and dereference: &, *, [ ]
+            sequencing: ,
+            subexpression grouping: ( )
+            type conversion: (typename)
+            C uses the operator = (used in mathematics to express equality) to indicate assignment, following the precedent of Fortran and PL/I, but unlike ALGOL and its derivatives. C uses the operator == to test for equality. The similarity between these two operators (assignment and equality) may result in the accidental use of one in place of the other, and in many cases, the mistake does not produce an error message (although some compilers produce warnings). For example, the conditional expression if (a == b + 1) might mistakenly be written as if (a = b + 1), which will be evaluated as true if a is not zero after the assignment.[32]
+            
+            The C operator precedence is not always intuitive. For example, the operator == binds more tightly than (is executed prior to) the operators & (bitwise AND) and | (bitwise OR) in expressions such as x & 1 == 0, which must be written as (x & 1) == 0 if that is the coder's intent.[33]
+            
+            "Hello, world" example
+            See also: Hello, world
+            
+            "Hello, World!" program by Brian Kernighan (1978)
+            The "hello, world" example, which appeared in the first edition of K&R, has become the model for an introductory program in most programming textbooks. The program prints "hello, world" to the standard output, which is usually a terminal or screen display.
+            
+            The original version was:[34]
+            
+            main()
+            {
+                printf("hello, world\n");
+            }
+            A standard-conforming "hello, world" program is:[a]
+            
+            #include <stdio.h>
+            
+            int main(void)
+            {
+                printf("hello, world\n");
+            }
+            The first line of the program contains a preprocessing directive, indicated by #include. This causes the compiler to replace that line with the entire text of the stdio.h standard header, which contains declarations for standard input and output functions such as printf and scanf. The angle brackets surrounding stdio.h indicate that stdio.h can be located using a search strategy that prefers headers provided with the compiler to other headers having the same name, as opposed to double quotes which typically include local or project-specific header files.
+            
+            The next line indicates that a function named main is being defined. The main function serves a special purpose in C programs; the run-time environment calls the main function to begin program execution. The type specifier int indicates that the value that is returned to the invoker (in this case the run-time environment) as a result of evaluating the main function, is an integer. The keyword void as a parameter list indicates that this function takes no arguments.[b]
+            
+            The opening curly brace indicates the beginning of the definition of the main function.
+            
+            The next line calls (diverts execution to) a function named printf, which in this case is supplied from a system library. In this call, the printf function is passed (provided with) a single argument, the address of the first character in the string literal "hello, world\n". The string literal is an unnamed array with elements of type char, set up automatically by the compiler with a final NULL(ASCII value 0) character to mark the end of the array (for printf to know the length of the string).The NULL character can be also written as an escape sequence, written as \0. The \n is an escape sequence that C translates to a newline character, which on output signifies the end of the current line. The return value of the printf function is of type int, but it is silently discarded since it is not used. (A more careful program might test the return value to determine whether or not the printf function succeeded.) The semicolon ; terminates the statement.
+            
+            The closing curly brace indicates the end of the code for the main function. According to the C99 specification and newer, the main function, 
+            unlike any other function, will implicitly return a value of 0 upon reaching the } that terminates the function. (Formerly an explicit return 
+            0; statement was required.) This is interpreted by the run-time system as an exit code indicating successful execution.
+
+            <p>
+
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+
+        </section>
+
+        <section id="Books-section">
+            <h2>Books</h2>
+            <ul>
+                <li><a href="https://notalentgeek.github.io/note/note/project/project-independent/pi-brp-beginning-c-programming/document/20170807-1504-cet-1-book-and-source-1.pdf" download>Download PDF</a></li>
+                <li><a href="https://cds.iisc.ac.in/wp-content/uploads/DS286.AUG2016.Lab2_.cpp_tutorial.pdf" download>Download PDF</a></li>
+                <li><a href="https://faculty.ksu.edu.sa/sites/default/files/ObjectOrientedProgramminginC4thEdition.pdf" download>Download PDF</a>
+                <li> <a href="https://www.cet.edu.in/noticefiles/285_OOPS%20lecture%20notes%20Complete.pdf" download>Download PDF5</a></li>
+                <li> <a href="https://esseps.com/lander?query=gcp%20cloud%20platform&utm_term=gcp%20cloud%20platform,cyber%20security%20detection,enterprise%20cyber%20security&camp_id=309914&gclid=EAIaIQobChMI9Y3rtdPwhQMVRCODAx168g23EAEYASAAEgLFmfD_BwE&gclid=EAIaIQobChMI9Y3rtdPwhQMVRCODAx168g23EAEYASAAEgLFmfD_BwE" download>Download PDF</a></li></li>
+            
+            </ul> 
+        </section>
+
+        <section id="Videoes-section">
+            <h2>Videoes</h2>
+            <ul>
+                <li><a href="https://youtu.be/rQoqCP7LX60?si=GnS5rLarL1_ICpTJ">Link 1</a></li>
+                <li><a href="https://youtu.be/7Dh73z3icd8?si=Ls5lH4Nt8eCFo_pc">Link 2</a></li>
+                <li><a href="https://youtu.be/6w82mXWg5Fw?si=oAU9F6peAX5o7l08">Link 3</a></li>
+                <li><a href="https://youtu.be/KJgsSFOSQv0?si=7wcTTTG7wkcyOf8t">Link 4</a></li>
+                <li><a href="https://youtu.be/87SH2Cn0s9A?si=WLBnGMZSb3Kfh3Jt">Link 5</a></li>
+                <li><a href="https://youtu.be/irqbmMNs2Bo?si=kfIS7HsCwfnQfGZ-" >Link 6</a></li>
+            
+            </ul>
+        </section>
+
+        <section id="Questions-section">
+            <h2>Questions</h2>
+            <p>1. Why is C called a mid-level programming language? </p>
+            <p>2. What are the features of the C language? </p>
+            <p>3. What is a token? </p>
+            <p>4. What is the use of printf() and scanf() functions? Also explain format specifiers? </p>
+            <p>5. In C, What is the #line used for? </p>
+            <p>6. How can a string be converted to a number? </p>
+            <p>7. How can a number be converted to a string? </p>
+            <p>9. What is recursion in C? </p>
+            <p>10. What is the difference between global int and static int declaration? </p>
+            <p>11. What is a pointer in C? </p>
+            <p>12. Difference between const char* p and char const* p? </p>
+            <p>13. What is pointer to pointer in C? </p>
+            <p>14. Why n++ executes faster than n+1 ? </p>
+            <p>15. What is typecasting in C? </p>
+            <p>16. What are the advantages of Macro over function? </p>
+            <p>20. What are Enumerations? </p>
+            <p>21. When should we use the register storage specifier? </p>
+            <p>13. What is the difference between ‘g’ and “g” in C? </p>
+            <p>14. What is a near pointer and a far pointer in C? </p>
+            <p>15. Which structure is used to link the program and the operating system? </p>
+            <p>16. Suppose a global variable and local variable have the same name. Is it possible <p>access a global variable from a block where local variables are defined? </p>
+            <p>17. Which is better #define or enum? </p>
+            <p>15. What is dynamic data structure? </p>
+            <p>16. Add Two Numbers Without Using the Addition Operator </p>
+            <p>17. Subtract Two Number Without Using Subtraction Operator </p>
+            <p>18. Multiply an Integer Number by 2 Without Using Multiplication Operator </p>
+            <p>19. Check whether the number is EVEN or ODD, without using any arithmetic or relational operators </p>
+            <p>20. Reverse the Linked List. Input: 1->2->3->4->5->NULL Output: 5->4->3->2->1->NULL </p>
+            <p>21. Check for Balanced Parentheses using Stack </p>
+            <p>22. Program to find n’th Fibonacci number </p>
+            <p>23. Write a program to find the node at which the intersection of two singly linked lists begins. </p>
+            <p>24. Merge Two sorted Linked List </p>
+           <p>25. Why doesn’t C support function overloading? </p>
+            </section>
+
+        <section id="Resource-section">
+            <h2>Resource</h2>
+            <p><a href="https://www.learn-c.org/">Learn-C.org</a> - Interactive C Tutorial (Resource: Learn-C.org)</p>
+            <p><a href="https://www.programiz.com/c-programming">Programiz</a> - C Programming Guide (Resource: Programiz)</p>
+            <p><a href="https://www.tutorialspoint.com/cprogramming/index.htm">Tutorialspoint</a> - C Programming Tutorials (Resource: Tutorialspoint)</p>
+            
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Coder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
